@@ -326,10 +326,27 @@ body{
 }
 .about{
     font-family: "Poppins", sans-serif;
+    /* position: relative; */
+    margin-top: 60px;
+    margin-bottom: 60px;
 }
-.gap{
-    margin-left: 90px;
+.about .img-box{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
 }
+.about .img-box img{
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 .tag ul li{
     margin:0 6px;
     border-radius: 4px;
@@ -745,11 +762,11 @@ svg.radial-progress text {
     z-index: -1;
     opacity: 0;
 }
-.grid-item figure figcaption .fa{
+.grid-item figure figcaption .fas{
     margin: 0;
     padding: 0;
     font-size: 24px;
-    font-weight: 400;
+    
     line-height: 35px;
     position: absolute;
     text-align: center;
@@ -761,6 +778,13 @@ svg.radial-progress text {
     opacity: 0;
     letter-spacing: 0px;
 }
+/* .grid-item figure figcaption .fas.fa-search{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 35px;
+    position: absolute;
+    text-align: center;
+} */
 figcaption .title{
     margin: 0;
     padding: 0;
@@ -809,7 +833,7 @@ figure:hover figcaption{
     transition: all 0.4s ease-out;
     
 }
-.grid-item figure:hover figcaption .fa{
+.grid-item figure:hover figcaption .fas{
     transform: translateX(0) translateY(0) translateZ(0) rotate(0deg) scale(1);
     transition: 0.2s;
     opacity: 1;
