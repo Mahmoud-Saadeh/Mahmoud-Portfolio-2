@@ -169,6 +169,32 @@ color:#ffffff;
 	z-index: 0;
 }
 
+@media (max-width: 767px){
+	.fa-chevron-down{
+		font-size: 35px;
+		z-index: 10000;
+		color: white;
+		position: absolute;
+		top: 0;
+		opacity: 0.5;
+		display: block;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
+@media (min-width: 767px){
+	.fa-chevron-down{
+		font-size: 35px;
+		z-index: 10000;
+		color: white;
+		position: absolute;
+		top: 0;
+		opacity: 0.5;
+		display: none;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
 .owl-carousel.home-slider .slider-item{
 	background-size: cover;
 	background-repeat: no-repeat;

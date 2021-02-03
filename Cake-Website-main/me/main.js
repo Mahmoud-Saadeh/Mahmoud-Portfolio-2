@@ -25,6 +25,12 @@ AOS.init({
 	};
 	fullHeight();  //call the function
 
+	var downarr = function(){
+		var t = $(window).height();
+		$(".fa-chevron-down").css("top",t-100);
+
+	};
+	downarr();
 
 	//navbar scroll
 	var scrollWindow = function(){
