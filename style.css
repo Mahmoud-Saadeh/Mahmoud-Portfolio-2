@@ -136,8 +136,14 @@ body{
 .header ,.sidemenu.active ,.social{
     transform: translate3d(0,0,0);
     /* visibility: visible; */
-   
-
+}
+@media (max-width: 500px){
+.header .sidemenu{
+    visibility: hidden;
+}
+    .header ,.sidemenu.active ,.social{
+        visibility: visible;
+    }
 }
 .header .sidemenu .close{
     height: 30px;
